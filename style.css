@@ -1,0 +1,297 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d500f9;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #333;
+    margin: 0 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    color: #d500f9;
+}
+
+/* Footer */
+.footer {
+    background-color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    color: #333;
+    width: 100%;
+    font-size: 1em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+}
+
+/* Page Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3em 1.5em;
+    flex: 1;
+    color: #333;
+}
+
+/* Titles */
+h1, h2 {
+    color: #d500f9;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 1.5em;
+}
+
+/* Paragraphs */
+p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+/* About Us Section Styling */
+.about-section, .vision-section, .join-section, .offerings-section, .needs-section {
+    margin-bottom: 2em;
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling for About Sections */
+.about-section p,
+.vision-section p,
+.join-section p,
+.offerings-section p,
+.needs-section p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    margin-top: 0.5em;
+    color: #333;
+}
+
+li {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+/* Sponsor Section Styling */
+.sponsor {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 2.5em;
+    margin-bottom: 2.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 2em auto; /* Centered in the page */
+}
+
+.sponsor .logo-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor img {
+    max-width: 90%; /* Larger logo size */
+    max-height: 180px; /* Increased standard logo height */
+    object-fit: contain;
+}
+
+.sponsor .info-container {
+    flex: 1;
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    max-width: 400px;
+}
+
+.sponsor h2 {
+    color: #d500f9;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.sponsor p {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.sponsor .button {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color: #d500f9;
+    color: white;
+    border: none;
+    padding: 0.8em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.sponsor .button:hover {
+    background-color: #c51162;
+}
+
+/* Closing Statement Styling */
+.closing-statement {
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    color: #555;
+    margin-top: 2em;
+}
+
+/* Center-Aligned Headings and First Paragraphs */
+.about-section h2,
+.vision-section h2,
+.join-section h2,
+.about-section p:first-of-type,
+.vision-section p:first-of-type,
+.join-section p:first-of-type {
+    text-align: center;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #ffffff; /* White background */
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Maximum width for the form */
+    margin: 2em auto; /* Centering the form */
+    display: flex;
+    flex-direction: column; /* Column layout */
+}
+
+/* Label Styles */
+.contact-form label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+/* Input and Textarea Styles */
+.contact-form input,
+.contact-form textarea {
+    font-size: 1em;
+    padding: 0.8em;
+    margin-bottom: 1.5em; /* Space between inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    outline: none; /* No outline */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+/* Focus Effect for Inputs */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #d500f9; /* Border color when focused */
+}
+
+/* Button Styles */
+.contact-form button {
+    background-color: #d500f9; /* Button color */
+    color: white; /* Button text color */
+    padding: 1em; /* Button padding */
+    font-size: 1.1em; /* Button text size */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Button Hover Effect */
+.contact-form button:hover {
+    background-color: #c51162; /* Darker shade on hover */
+}
+
+/* Social Media Links Styling */
+.social-media {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Centered alignment */
+    margin-top: 2em; /* Margin above */
+    gap: 1.5em; /* Space between icons */
+}
+
+.social-media a {
+    color: #333; /* Default link color */
+    font-size: 1.2em; /* Icon size */
+    text-decoration: none; /* No underline */
+    display: flex; /* Flexbox for icons */
+    align-items: center; /* Centered alignment */
+    gap: 0.5em; /* Space between icon and text */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+/* Hover Effect for Social Links */
+.social-media a:hover {
+    color: #d500f9; /* Color change on hover */
+}
+
+.social-media i {
+    font-size: 1.5em; /* Icon size */
+}
+
+#my-form-status {
+    text-align: center; /* Center the text */
+    color: #d500f9; /* Set the text color to pink */
+    font-size: 1.2em; /* Optional: Increase the font size for visibility */
+    margin-top: 1em; /* Optional: Add some space above the status message */
+}
