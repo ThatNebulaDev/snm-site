@@ -22,6 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 .navbar .logo {
@@ -52,7 +53,7 @@ body {
     width: 100%;
     font-size: 1em;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
@@ -210,88 +211,264 @@ li {
 
 /* Contact Form Styling */
 .contact-form {
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
     padding: 2em;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px; /* Maximum width for the form */
-    margin: 2em auto; /* Centering the form */
+    max-width: 600px;
+    margin: 2em auto;
     display: flex;
-    flex-direction: column; /* Column layout */
+    flex-direction: column;
+    overflow: hidden; /* Prevents scrollbars */
 }
 
-/* Label Styles */
 .contact-form label {
     font-size: 1.1em;
     color: #333;
     margin-bottom: 0.5em;
 }
 
-/* Input and Textarea Styles */
 .contact-form input,
 .contact-form textarea {
     font-size: 1em;
     padding: 0.8em;
-    margin-bottom: 1.5em; /* Space between inputs */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 4px; /* Rounded corners */
-    outline: none; /* No outline */
-    transition: border-color 0.3s ease; /* Smooth border color transition */
+    margin-bottom: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-/* Focus Effect for Inputs */
+/* Prevent horizontal scrollbar */
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #d500f9; /* Border color when focused */
+    border-color: #d500f9;
 }
 
-/* Button Styles */
 .contact-form button {
-    background-color: #d500f9; /* Button color */
-    color: white; /* Button text color */
-    padding: 1em; /* Button padding */
-    font-size: 1.1em; /* Button text size */
-    border: none; /* No border */
-    cursor: pointer; /* Pointer cursor */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    background-color: #d500f9;
+    color: white;
+    padding: 1em;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Button Hover Effect */
 .contact-form button:hover {
-    background-color: #c51162; /* Darker shade on hover */
+    background-color: #c51162;
 }
 
 /* Social Media Links Styling */
 .social-media {
-    display: flex; /* Flexbox for alignment */
-    justify-content: center; /* Centered alignment */
-    margin-top: 2em; /* Margin above */
-    gap: 1.5em; /* Space between icons */
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    gap: 1.5em;
 }
 
 .social-media a {
-    color: #333; /* Default link color */
-    font-size: 1.2em; /* Icon size */
-    text-decoration: none; /* No underline */
-    display: flex; /* Flexbox for icons */
-    align-items: center; /* Centered alignment */
-    gap: 0.5em; /* Space between icon and text */
-    transition: color 0.3s ease; /* Smooth color change */
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: color 0.3s ease;
 }
 
-/* Hover Effect for Social Links */
 .social-media a:hover {
-    color: #d500f9; /* Color change on hover */
+    color: #d500f9;
 }
 
 .social-media i {
-    font-size: 1.5em; /* Icon size */
+    font-size: 1.5em;
 }
 
 #my-form-status {
-    text-align: center; /* Center the text */
-    color: #d500f9; /* Set the text color to pink */
-    font-size: 1.2em; /* Optional: Increase the font size for visibility */
-    margin-top: 1em; /* Optional: Add some space above the status message */
+    text-align: center;
+    color: #d500f9;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.highlights, .cta, .news {
+    margin-bottom: 2em;
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlights h2, .cta h2, .news h2 {
+    color: #d500f9;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background-color: #d500f9;
+    color: white;
+    padding: 0.8em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c51162;
+}
+
+.description-box, .latest-video, .news-box, .cta {
+    margin-bottom: 2em;
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.latest-video .video-container {
+    margin-top: 1em;
+}
+
+.latest-video iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Styling for the main news box */
+.news-box {
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+/* Styling for each individual news item */
+.news-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* News header styling */
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+/* Title on the left */
+.news-title {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+}
+
+/* Date on the right */
+.news-date {
+    color: #777;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+/* News content styling */
+.news-content {
+    text-align: center;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5em;
+    max-width: 70%; /* 70% of the parent container */
+    margin: 0 auto; /* Center content within the news item */
+}
+
+
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background-color: #d500f9;
+    color: white;
+    padding: .7em 0;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+    margin: 1em auto;
+}
+
+.button:hover {
+    background-color: #c51162;
+}
+
+.learn-more {
+    margin-top: 1.5em;
+}
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 4px;
+    width: 25px;
+    background-color: #d500f9;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+
+}
+
+.nav-links a {
+    display: block; /* Ensures links stack vertically */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 850px) {
+    .menu-toggle {
+        display: flex; /* Show hamburger menu on small screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide the links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        background-color: #ffffff;
+        top: 60px; /* Position below navbar */
+        right: 0;
+        width: 100%; /* Full width */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .nav-links a {
+        padding: 1em; /* Add padding to links */
+    }
 }

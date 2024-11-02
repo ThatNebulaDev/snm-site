@@ -9,8 +9,13 @@
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <a href="#" class="logo">SNM Esports</a> <!-- Logo placeholder -->
-        <div>
+        <a href="#" class="logo">SNM Esports</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="nav-links" id="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="sponsors.html">Sponsors</a>
@@ -21,12 +26,60 @@
     <!-- Home Page Content -->
     <div class="container">
         <h1>Welcome to SNM Esports</h1>
-        <p>We are a passionate and dynamic esports team. Join us and let's make history together!</p>
+
+        <!-- About Us Section -->
+        <section class="description-box">
+            <h2>About Us</h2>
+            <p>SNM Esports is dedicated to excellence in competitive gaming. Our team is committed to training, competing, and bringing home victories. Join us in our journey!</p>
+            <a href="about.html" class="button learn-more">Learn More</a> <!-- Learn More Button -->
+        </section>
+
+        <!-- Latest YouTube Video Box -->
+        <section class="latest-video">
+            <h2>Latest Video</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Ug94Kzv2AC8" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="news-box">
+            <h2>Latest News</h2>
+        
+            <!-- Single News Item -->
+            <div class="news-item">
+                <div class="news-header">
+                    <span class="news-title">Chapter 2 Remix!</span>
+                    <span class="news-date">2/11/2024</span>
+                </div>
+                <div class="news-content">
+                    <p>Fortnite just rereleased Fortnite Chapter 2, but with a twist. You can drop in now with all new remixed skins, items and POIs. But stil have the OG feel of Chapter 2</p>
+                </div>
+            </div>
+        
+            <!-- Another News Item -->
+            <div class="news-item">
+                <div class="news-header">
+                    <span class="news-title">New Montage!</span>
+                    <span class="news-date">1/11/2024</span>
+                </div>
+                <div class="news-content">
+                    <p>We just released a new Fortnite Montage. The montage contains clips from Team SNM with the songs "Field Trip" and "Private Landing". Credit to DemosVFX for editing the montage. We would also like to give credit to all those who participated in the video!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <h2>Join Us!</h2>
+            <p>Are you an aspiring player? Join our community today and participate in our events!</p>
+            <a href="contact.html" class="button">Contact Us</a>
+        </section>
     </div>
 
     <!-- Footer -->
     <div class="footer">
         <p>&copy; 2024 SNM Esports | All Rights Reserved</p>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
