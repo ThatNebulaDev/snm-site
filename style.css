@@ -472,3 +472,24 @@ body {
         padding: 1em; /* Add padding to links */
     }
 }
+
+.latest-video {
+    text-align: center; /* Center align the video container */
+}
+
+.video-container {
+    position: relative; /* Position relative for absolute children */
+    width: 100%; /* Full width of the container */
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (100 / 16 * 9 = 56.25) */
+    overflow: hidden; /* Prevent overflow */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.video-container iframe {
+    position: absolute; /* Position absolutely to fill container */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: none; /* Remove border */
+}
